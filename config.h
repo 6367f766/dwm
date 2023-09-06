@@ -247,7 +247,7 @@ static const Key keys[] = {
     {MODKEY, XK_a, togglegaps, {0}},
     {MODKEY | ShiftMask, XK_a, defaultgaps, {0}},
     {MODKEY, XK_s, togglesticky, {0}},
-    /* { MODKEY|ShiftMask,		XK_s,		spawn,		SHCMD("")
+    /* { MODKEY|ShiftMask,		XK_s,		spawn, SHCMD("")
      * },
      */
     {MODKEY,
@@ -269,7 +269,7 @@ static const Key keys[] = {
     {MODKEY, XK_semicolon, shiftview, {.i = 1}},
     {MODKEY | ShiftMask, XK_semicolon, shifttag, {.i = 1}},
     {MODKEY, XK_apostrophe, togglescratch, {.ui = 1}},
-    /* { MODKEY|ShiftMask,		XK_apostrophe,	spawn,		SHCMD("")
+    /* { MODKEY|ShiftMask,		XK_apostrophe,	spawn, SHCMD("")
      * },
      */
     {MODKEY | ShiftMask, XK_apostrophe, togglesmartgaps, {0}},
@@ -428,8 +428,8 @@ static const Key keys[] = {
      {.v = (const char *[]){TERMINAL, "-e", "ncmpcpp", NULL}}},
     {0, XF86XK_AudioMicMute, spawn,
      SHCMD("pactl set-source-mute @DEFAULT_SOURCE@ toggle")},
-    /* { 0, XF86XK_PowerOff,		spawn,		{.v = (const char*[]){ "sysact",
-       NULL } } }, */
+    /* { 0, XF86XK_PowerOff,		spawn,		{.v = (const char*[]){
+       "sysact", NULL } } }, */
     {0,
      XF86XK_Calculator,
      spawn,
